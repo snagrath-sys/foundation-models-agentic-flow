@@ -130,7 +130,7 @@ def predict_disease(input_symptoms):
 
 
 if __name__ == "__main__":
-    csv_path = '/content/data/improved_disease_dataset.csv'
+    csv_path = 'data/improved_disease_dataset.csv'
     X, y = load_and_preprocess_data(csv_path)
     X_resampled, y_resampled = balance_and_prepare_data(X, y)
     evaluate_models(X_resampled, y_resampled)
