@@ -7,7 +7,7 @@ import pandas as pd
 from models.dummy_model_disease_pred import predict_disease
 
 # Load supported symptoms from dataset column names
-DATASET_PATH = "/content/data/improved_disease_dataset.csv"
+DATASET_PATH = "../data/improved_disease_dataset.csv"
 SYMPTOM_COLUMNS = pd.read_csv(DATASET_PATH).columns[:-1].tolist()
 
 @tool
